@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>João Paulo Lima | Analista de Dados Júnior</title>
+  <meta name="theme-color" content="#f8f8f5">
+  <meta name="description" content="Portfólio de João Paulo Lima, profissional de TI em transição para Análise de Dados. Projetos em dados, automação e desenvolvimento.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  <header class="nav">
+    <a href="#inicio" class="logo" aria-label="João Paulo Lima, início">JP<span>.</span></a>
+    <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav-links">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"></path></svg>
+    </button>
+    <nav class="nav-links" id="nav-links" aria-label="Navegação principal">
+      <a href="#sobre">Sobre</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#stack">Stack</a>
+      <a href="#contato">Contato</a>
+      <button id="tema" class="theme-toggle" type="button" aria-label="Alternar para tema escuro" aria-pressed="false">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"></path></svg>
+      </button>
+    </nav>
+  </header>
+
+  <main id="conteudo">
+    <section id="inicio" class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">Portfólio · Maceió, Brasil</p>
+        <h1>João Paulo <span>Lima.</span></h1>
+        <p class="sub">Analista de Dados Júnior em formação, com experiência em desenvolvimento e automação. Transformo dados em respostas e ideias em soluções.</p>
+        <div class="botoes">
+          <a class="btn" href="#projetos">Explorar projetos
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"></path></svg>
+          </a>
+          <a class="btn ghost" href="#contato">Entrar em contato</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="visual-orbit" aria-hidden="true"></div>
+        <img class="hero-photo" src="assets/foto.jpg" width="600" height="600" alt="Foto de João Paulo Lima">
+        <div class="visual-card mini" aria-hidden="true">
+          <div class="visual-card-head"><span>Dados → decisão</span><span class="mono">SQL · PY · BI</span></div>
+          <div class="chart">
+            <span style="--bar-height: 38%"></span><span style="--bar-height: 56%"></span>
+            <span style="--bar-height: 45%"></span><span style="--bar-height: 76%"></span>
+            <span style="--bar-height: 62%"></span><span style="--bar-height: 88%"></span>
+          </div>
+        </div>
+        <div class="float-note" aria-hidden="true"><span>↗</span> Aberto a oportunidades</div>
+      </div>
+    </section>
+
+    <section id="sobre">
+      <div class="section-heading">
+        <div>
+          <span class="section-kicker">01 / trajetória</span>
+          <h2>Uma base técnica.<br>Um olhar analítico.</h2>
+        </div>
+        <p class="section-intro">Experiência em tecnologia, curiosidade por problemas complexos e foco em soluções que geram valor.</p>
+      </div>
+      <div class="about-layout">
+        <div class="about-copy">
+          <p>Sou formado em Sistemas de Informação pelo CESMAC e trabalho com TI desde 2023. Nesse caminho, desenvolvi aplicativos mobile, APIs e automações — experiências que fortaleceram minha capacidade de entender sistemas de ponta a ponta.</p>
+          <p>Agora direciono minha carreira para Análise de Dados, unindo essa base técnica a SQL, Python e Power BI para transformar dados em decisões mais claras.</p>
+        </div>
+        <div class="about-facts" aria-label="Resumo profissional">
+          <div class="fact"><span>Formação</span><span>Sistemas de Informação</span></div>
+          <div class="fact"><span>Instituição</span><span>CESMAC</span></div>
+          <div class="fact"><span>Atuação em TI</span><span>Desde 2023</span></div>
+          <div class="fact"><span>Localização</span><span>Maceió, AL</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projetos">
+      <div class="section-heading">
+        <div>
+          <span class="section-kicker">02 / trabalho selecionado</span>
+          <h2>Projetos</h2>
+        </div>
+        <p class="section-intro">Análises e ferramentas construídas para explorar problemas reais com tecnologia.</p>
+      </div>
+      <div class="filtros">
+        <button class="filtro ativo" type="button" data-f="todos" aria-pressed="true">Todos</button>
+        <button class="filtro" type="button" data-f="dados" aria-pressed="false">Dados</button>
+        <button class="filtro" type="button" data-f="dev" aria-pressed="false">Desenvolvimento</button>
+      </div>
+      <div class="grid" id="grid" aria-live="polite"></div>
+    </section>
+
+    <section id="stack">
+      <div class="section-heading">
+        <div>
+          <span class="section-kicker">03 / ferramentas</span>
+          <h2>Stack</h2>
+        </div>
+        <p class="section-intro">Tecnologias que uso para investigar, construir e comunicar soluções.</p>
+      </div>
+      <div class="stack-panel">
+        <p>Da exploração de dados à construção de aplicações, combino ferramentas conforme o desafio.</p>
+        <div class="tags" id="tags"></div>
+      </div>
+    </section>
+
+    <section id="contato">
+      <div class="contact-panel">
+        <div class="contact-copy">
+          <span class="section-kicker">04 / contato</span>
+          <h2>Vamos transformar dados em boas decisões?</h2>
+          <p>Busco oportunidades como <strong>Analista de Dados Júnior</strong>. Disponível para entrevistas, presencial em Maceió ou remoto.</p>
+          <span class="status"><span class="status-dot"></span> Disponível para novas oportunidades</span>
+        </div>
+        <ul class="contact-list" id="contact-list"></ul>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>© <span id="ano"></span> João Paulo Lima</span>
+    <div class="social-links" id="social-links" aria-label="Redes sociais"></div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
