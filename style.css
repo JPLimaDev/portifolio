@@ -305,7 +305,7 @@ h1 span {
 
 .hero-visual {
   position: relative;
-  min-height: 350px;
+  min-height: 440px;
 }
 
 .visual-orbit {
@@ -352,12 +352,14 @@ h1 span {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: min(68%, 270px);
-  aspect-ratio: 1;
+  width: auto;
+  height: 92%;
+  max-width: 80%;
   transform: translate(-50%, -50%);
   border: 6px solid var(--surface);
-  border-radius: 50%;
-  object-fit: cover;
+  border-radius: 18px;
+  object-fit: contain;
+  background: #fff;
   box-shadow: var(--shadow), 0 0 0 1px var(--line);
 }
 
@@ -939,7 +941,7 @@ footer {
   }
 
   .hero-visual {
-    min-height: 310px;
+    min-height: 400px;
   }
 
   .visual-orbit {
@@ -986,7 +988,7 @@ footer {
   }
 
   .hero-visual {
-    min-height: 270px;
+    min-height: 360px;
   }
 
   .visual-card {

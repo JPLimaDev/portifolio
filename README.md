@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="assets/foto.jpg" width="160" style="border-radius:50%" alt="Foto de João Paulo Lima">
+<img src="assets/foto.jpg" width="180" alt="Foto de João Paulo Lima">
 
 # João Paulo Lima
 
